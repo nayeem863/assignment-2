@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
+.quicksand{
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/* color */
+.
+/* header */
+.school {
+    display: flex;
+}
+.nav-item{
+    margin-right: 32px;
+    list-style: none;
+    text-decoration: none;
+}
+.nav-link a{
+    text-decoration: none;
+}
+.nav-link{
+    
+    font-weight: bold;
+    font-size: 1.25rem;
+    display: flex;
+}
+.home{
+    color: orange;
+}
+.about{
+    color: skyblue;
+}
+.facilities{
+    color: #05D4DF;
+}
+.admission{
+    color: rgba(93, 88, 239, 1);
+}
+.btn-primary{
+    padding: 10px 60px 10px 60px;
+    background-color: orange;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 700;
+    font-size: 1.25rem;
+    border: none;
+    border-radius: 12px;
+}
+.sidebar{
+    display: none;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+/* banner */
+.banner-content h2{
+    font-weight: bold;
+    font-size: 3.5rem;
+}
+.Empowering{
+    color: orange;
+}
+.towards-vision{
+    color: skyblue;
+}
+.banner-description{
+    font-weight:400;
+    font-size: 1.25rem;
+    color: black;
+
+}
+
+.enroll{
+    padding: 10px 50px 10px 50px;
+    background-color: black;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 700;
+    font-size: 1.25rem;
+    border: none;
+    border-radius: 12px;
+    
+
+}
+.banner-content{
+    max-width: 640px;
+    max-height: 331px;
+    padding: 122px 0px 122px 0px;
+}
+.banner-image img{
+    max-width: 468px;
+    min-height: 575px;
+}
+.banner{
+    max-width: 1160px;
+    margin: 0 auto;
+  
+    display: flex;
+    gap: 50px;
+    
+}
+/* curriculumn */
+.standard-curriculumn{
+    background-image: url(../assets/bg.png);
+    max-width: 1160px;
+    margin: 0 auto;
+
+
+}
+.card-container{
+    display: flex;
+    gap: 20px;
+}
+.cards{
+    padding: 53px 40px 53px 40px;
+    border: none;
+    border-radius: 18px;
+    max-width: 300px;
+    max-height: 476px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card-1{
+   background:linear-gradient(to bottom ,rgba(222, 245, 255, 1),rgba(222, 245, 255, 0))
+   
+   
+
+}
+.card-2{
+    background:linear-gradient(to bottom ,rgba(255, 244, 220, 1),rgba(222, 245, 255, 0))
+    
+ }
+ .card-3{
+    background:linear-gradient(to bottom ,rgba(242, 232, 255, 1),rgba(222, 245, 255, 0))
+ }
+.cards a{
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    margin: 0 auto;
+
+}
+.read-1{
+    color: rgba(100, 200, 255, 1);
+    font-weight: bold;
+    font-size: 1rem;
+}
+.read-2{
+    color: rgba(240, 170, 0, 1);
+    font-weight: bold;
+    font-size: 1rem;
+}
+.read-3{
+    color: rgba(135, 0, 255, 1);
+    font-weight: bold;
+    font-size: 1rem;
+}
+.cards img{
+    max-width: 136px;
+    max-height: 136px;
+    margin: 0 auto;
+}
+.Curriculumn-title{
+    font-weight: bold;
+    font-size: 2.87rem;
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+    
+}
+.curriculumn-subtitle{
+    font-size: 1.5rem;
+    color: rgba(32, 32, 32, 1);
+    font-weight: bold;
+    text-align: center;
+}
+.curriculumn-description{
+    color: rgba(128, 128, 128, 1);
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+}
+.less{
+    background-color: orange;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 700;
+    font-size: 2em;
+    border: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    
+}
+.btn-less{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    gap: 10px;
+}  
+/* story */
+
+.story-1{
+    display:flex;
+    flex-direction: column;
+    max-width: 540px;
+    max-height: 630px;
+    border: none;
+    background-color: white;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+.story-title{
+    font-size: 2.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+   
+    
+ 
+/* responsive */
+@media screen and (max-width:576px){
+    .school h2{
+        display: none;
+    }
+    .sidebar{
+        display: block;
+        max-width: 30px;
+        min-height: 30px;
+    }
+    .nav-link ,.less,.btn-less{
+        display: none;
+    }
+    .btn-primary{
+        display: none;
+    }
+    .header{
+        border-bottom: 2px solid orange;
+        padding: 12px 16px 12px 16px;
+        
+    }
+    .banner{
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+    .banner-content{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 10px;
+        margin-bottom: 20px;
+        
+    }
+    .enroll{
+        width: 200px;
+        height: 42px; 
+        font-size: 1rem;
+        padding: 6px 24px 6px 24px;
+        margin: 0 auto;
+        
+        
+        
+    }
+    .banner-content h2{
+        margin-bottom: 10px;
+    }
+    .banner-description{
+        
+        margin-bottom:28px;
+    }
+    .card-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .Curriculumn-title{
+        font-size: 2rem;
+        margin-top: 50px;
+    }
+   
+}
