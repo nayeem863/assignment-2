@@ -206,6 +206,33 @@
     gap: 10px;
 }  
 /* story */
+#story{
+    background-image: url(../assets/bg.png);
+    background: linear-gradient(to top , rgba(254,163,1,0.2)  30%,rgba(255,255,255,0.5) 100%),url(../assets/bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.stories{
+    display: flex;
+    gap: 18px;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+.november{
+    font-weight: 500;
+    font-size: 1rem;
+    color: #FFFFFF;
+    background-color: rgba(60, 216, 232, 1);
+    border: none;
+    max-width: 174px;
+    max-height: 74px;
+    border-radius: 47px;
+    padding: 14px 15px 14px 15px;
+    margin-left: 38px;
+    margin-top: -25px;
+}
 
 .story-1{
     display:flex;
@@ -216,13 +243,73 @@
     background-color: white;
     border-bottom-right-radius: 16px;
     border-bottom-left-radius: 16px;
+    
+    
+    
+}
+.stories img{
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+.story-1-description{
+    font-weight: 500;
+    font-size: 1rem;
+    color: rgba(102, 102, 102, 1);
+   
+    max-width: 433px;
+    padding: 0px 38px 34px 60px;
+    
 }
 .story-title{
     font-size: 2.8rem;
     font-weight: bold;
     text-align: center;
 }
-   
+.story-subtitle-1{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 1);
+    padding: 20px 58px 20px 58px;
+}
+.story-2{
+    display: flex;
+    flex-direction: column;
+    max-width: 290px;
+    max-height: 301px;
+    border-radius: 16px;
+    border: none;
+    background-color: #FFFFFF;
+
+}
+.november-1{
+    background-color: rgba(149, 178, 38, 1);
+    max-height: 38px;
+    padding: 10px 15px 10px 15px;
+    margin: 0 auto;
+    margin-top: -25px;
+}
+#november-btn{
+    background-color: rgba(93, 88, 240, 1);
+}
+.story-2-subtitle{
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 1);
+    max-width: 214px;
+    padding: 28px 38px 28px 38px;
+}
+.other-story{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 19px;
+}
+.view-all {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
     
  
 /* responsive */
@@ -235,7 +322,7 @@
         max-width: 30px;
         min-height: 30px;
     }
-    .nav-link ,.less,.btn-less{
+    .nav-link ,.less,.btn-less,.story-1{
         display: none;
     }
     .btn-primary{
@@ -285,6 +372,21 @@
     .Curriculumn-title{
         font-size: 2rem;
         margin-top: 50px;
+    }
+    .other-story{
+        grid-template-columns: repeat(2,1fr);
+        width:100%;
+        margin-left: 12px;
+        margin-right: 12px;
+        gap: 11px; 
+   
+        
+        
+    }
+    .story-2{
+        max-width: 220px;
+        
+        
     }
    
 }
