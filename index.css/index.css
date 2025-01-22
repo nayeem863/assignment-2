@@ -7,7 +7,33 @@
   font-weight: 400;
   font-style: normal;
 }
-/* color */
+/* marquee */
+.marquee {
+    width: 100%;
+    overflow: hidden; 
+    white-space: nowrap; 
+    box-sizing: border-box;
+  }
+  
+  .marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 15s  linear infinite; 
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: red;
+  }
+  
+ 
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%); 
+    }
+  }
+  
 .
 /* header */
 .school {
@@ -306,8 +332,82 @@
 .view-all {
     display: flex;
     justify-content: center;
-    margin-top: 80px;
-    margin-bottom: 60px;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    
+}
+/* footer */
+#footer{
+    background-color: rgba(1, 172, 253, 1);
+    background-size: cover;
+}
+.education-title{
+    max-width: 206px;
+    font-weight: bold;
+    font-size: 2.625rem;
+    color: #FFFFFF;
+}
+.education-img{
+    width:  100px;
+    height: 100px;
+}
+.education>div{
+    display: flex;
+    align-items: center;
+    min-width: 299px;
+    max-height: 81px;
+    
+}
+.education-description{
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: #FFFFFF;
+    max-width: 500px;
+}
+.education{
+    padding: 123px 0px 123px 147px;
+}
+.about-link{
+    list-style: none;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+   
+}
+.about-title{
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    font-weight: bold;
+    list-style: none;
+    
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+   
+   
+}
+.keep-title{
+    font-size: 1.7rem;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+.social{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10.15px;
+}
+#last{
+    display: flex;
+    min-width: 1160px;
+    gap: 130px;
+    
+    margin: 0 auto;
+    align-items: center;
+
 }
 
     
@@ -388,5 +488,33 @@
         
         
     }
+    #last{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        max-width: 390px;
+        margin: 0 auto;
+        gap: 10px;
+        
+        
+    }
+    .education{
+      
+        max-width: 331px;
+        padding: 80px 20px 16px 40px;
+      
+    }
+    .about{
+        max-width: 331px;
+        padding-bottom: 20px;
+        
+    }
+    .keep{
+        align-items: center;
+        max-width: 200px;
+        padding-left: 40px;
+        padding-bottom: 40px;
+        padding-top: 20px;
+    }
+   
    
 }
